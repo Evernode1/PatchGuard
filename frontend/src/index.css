@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #0b0f0e;
+}
+
+body {
+  @apply bg-base text-ink font-mono antialiased;
+}
+
+::selection {
+  background: #3ddc97;
+  color: #0b0f0e;
+}

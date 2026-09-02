@@ -1,0 +1,15 @@
+# GenLayer test configuration.
+# Direct-mode tests (tests/direct/) ignore the network. Integration tests run
+# against GenLayer Studio using ACCOUNT_PRIVATE_KEY from .env.
+networks:
+  default: studionet
+  studionet:
+    accounts:
+      - "${ACCOUNT_PRIVATE_KEY}"
+    from: "${ACCOUNT_PRIVATE_KEY}"
+
+paths:
+  contracts: "contracts"
+  artifacts: "artifacts"
+
+environment: .env
